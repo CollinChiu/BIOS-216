@@ -1,18 +1,16 @@
 # README
 
 ## Authors
+Chiu, Collin
+From Stylianos (Stelios) Serghiou, Eirini Tsekitsidou
 
-Stylianos (Stelios) Serghiou, Eirini Tsekitsidou
 
 
-## Publication
-
-When we have the preprint or publication, we will post the link here!
 
 
 ## File structure
 
-Combining resources across OSF and GitHub should yield the following structure.
+Combining resources across Google Drive and GitHub should yield the following structure.
 
 ```
 ├── .gitignore          <- Lists files to be ignored in syncing between local and remote.
@@ -21,42 +19,16 @@ Combining resources across OSF and GitHub should yield the following structure.
 │
 ├── data
 │   ├── raw             <- The original, immutable data dump.
-│   │   └── <experiment>
-│   │       └── <conditions/replicate>
-│   │           └── <date as YYYY-MM-DD>
-│   ├── external        <- Data from third party sources (e.g., US Census).
-│   │   └── <provider>
-│   │       └── <date as YYYY-MM-DD>
-│   ├── intermediate       <- Intermediate data that has been standardized, formatted, deduped, etc.
-│   │   └── <experiment>
-│   │       └── <conditions/replicate>
-│   │           └── <date as YYYY-MM-DD>
-│   ├── extracted       <- Tabular data extracted from conformed image data.
-│   │   └── <experiment>
-│   │       └── <conditions/replicate>
-│   │           └── <date as YYYY-MM-DD>
 │   └── tidy            <- The final, canonical datasets for analysis. Includes engineered features.
-│       └── <experiment>
 │
 ├── code
 │   ├── data-processing <- Code to process data from raw all the way to tidy.
-│   │   └── <experiment>
-│   ├── draft-analyses  <- Code that operates on tidy data for draft data analytics and visualizations.
 │   └── final-analyses  <- Code that operates on tidy data to produce text, figures and tables as they appear in pubilcations.
 │
 ├── output
-│   ├── draft           <- Tables and figures from the draft analytics
-│   │   └── <experiment>
 │   └── final           <- Tables and figures from the final analytics
 │
 ├── docs                <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── publication                      
-│   └── journal                      <- Journal that this was submitted to
-│       └── submission-1_YYYY-MM-DD  <- All materials of submission 1
-│           ├── docs                 <- All documents for submission
-│           ├── figures              <- All figures for submission
-│           └── tables               <- All tables for submission
 │
 ├── .github
 │   ├── linters         <- Configuration files for all linters being used
